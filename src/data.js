@@ -9,17 +9,18 @@
 // ─────────────────────────────────────────────────────────────
 
 const L = (id, en) => ({ id, en });
+const asset = (path) => import.meta.env.BASE_URL + path.replace(/^\//, "");
 
 export const profile = {
   name: "Bagas Andi Aprilianto",
   role: "Telecommunications Engineer",
   location: L("Sidoarjo, Jawa Timur", "Sidoarjo, East Java"),
   email: "bagasandiaprilianto@gmail.com",
-  avatar: "/photos/fotobagas.jpeg",
+  avatar: asset("/photos/fotobagas.jpeg"),
   // File CV untuk tombol unduh, satu per bahasa. Taruh di folder public/cv/
   cv: {
-    id: "/cv/CV_Bagas Andi Aprilianto.pdf",
-    en: "/cv/CV_Bagas Andi Aprilianto.pdf",
+    id: asset("/cv/CV_Bagas Andi Aprilianto.pdf"),
+    en: asset("/cv/CV_Bagas Andi Aprilianto.pdf"),
   },
 };
 
@@ -180,18 +181,18 @@ export const projects = [
     ),
     images: [
       {
-        src: "/projects/azan-warning-system/1.svg",
+        src: asset("/projects/azan-warning-system/1.svg"),
         alt: L(
           "Rangkaian ESP32 dengan modul audio dan speaker untuk penerima",
           "ESP32 circuit with an audio module and speaker for the receiver"
         ),
       },
       {
-        src: "/projects/azan-warning-system/2.svg",
+        src: asset("/projects/azan-warning-system/2.svg"),
         alt: L("Proses perancangan casing perangkat penerima", "Design process for the receiver's casing"),
       },
       {
-        src: "/projects/azan-warning-system/3.svg",
+        src: asset("/projects/azan-warning-system/3.svg"),
         alt: L(
           "Pengujian sistem langsung untuk transmisi audio dan keamanan",
           "Live system testing for audio transmission and security"
@@ -222,18 +223,18 @@ export const projects = [
     ),
     images: [
       {
-        src: "/projects/measuring-instrument/1.svg",
+        src: asset("/projects/measuring-instrument/1.svg"),
         alt: L(
           "Rangkaian ESP32 dengan sensor ultrasonik dan servo motor",
           "ESP32 circuit with an ultrasonic sensor and a servo motor"
         ),
       },
       {
-        src: "/projects/measuring-instrument/2.svg",
+        src: asset("/projects/measuring-instrument/2.svg"),
         alt: L("Perakitan dan pengujian rangkaian elektronik", "Assembly and testing of the electronic circuit"),
       },
       {
-        src: "/projects/measuring-instrument/3.svg",
+        src: asset("/projects/measuring-instrument/3.svg"),
         alt: L(
           "Antarmuka Telegram untuk memantau status alat",
           "Telegram interface for monitoring device status"
@@ -264,15 +265,15 @@ export const projects = [
     ),
     images: [
       {
-        src: "/projects/cat-feeder/1.svg",
+        src: asset("/projects/cat-feeder/1.svg"),
         alt: L("Skema rangkaian pengukuran tegangan dan arus", "Voltage and current measurement schematic"),
       },
       {
-        src: "/projects/cat-feeder/2.svg",
+        src: asset("/projects/cat-feeder/2.svg"),
         alt: L("Perakitan komponen elektronik pemberi pakan", "Assembling the feeder's electronic components"),
       },
       {
-        src: "/projects/cat-feeder/3.svg",
+        src: asset("/projects/cat-feeder/3.svg"),
         alt: L("Tampilan LCD untuk nilai tegangan dan arus", "LCD display for voltage and current readings"),
       },
     ],
@@ -300,15 +301,15 @@ export const projects = [
     ),
     images: [
       {
-        src: "/projects/papr-research/1.svg",
+        src: asset("/projects/papr-research/1.svg"),
         alt: L("Tim riset PKM-RE saat presentasi", "PKM-RE research team during a presentation"),
       },
       {
-        src: "/projects/papr-research/2.svg",
+        src: asset("/projects/papr-research/2.svg"),
         alt: L("Capaian kegiatan riset PKM-RE", "PKM-RE research activity achievements"),
       },
       {
-        src: "/projects/papr-research/3.svg",
+        src: asset("/projects/papr-research/3.svg"),
         alt: L("Dokumentasi kegiatan riset", "Research activity documentation"),
       },
     ],
