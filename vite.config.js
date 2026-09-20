@@ -5,5 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "./", // <-- tambahkan ini
+  base: "/Portofolio.bagas/", // <-- Ganti dengan nama repositori Anda diawali dan diakhiri garis miring
 });
